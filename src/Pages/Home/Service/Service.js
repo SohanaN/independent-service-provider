@@ -1,12 +1,12 @@
 import React from 'react';
-import { Button, Card, Col } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
     const { name, img, description, price } = service;
     return (
         <Col md={4} className="mb-4">
-            <Card style={{ width: '18rem' }}>
+            <Card>
                 <Card.Img variant="top" src={img} className="img-fluid rounded" />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
