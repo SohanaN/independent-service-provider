@@ -11,18 +11,20 @@ const Services = () => {
     }, [])
     return (
         <>
-            <Container>
-                <h2 className='text-primary text-center mt-4'>Our Services</h2>
+            <div id="services">
+                <Container>
+                    <h2 className='text-primary text-center mt-4'>Our Services</h2>
 
-                <Row className="d-flex justify-content-center mt-4">
-                    {
-                        services.map(service => <Service
-                            key={service.id}
-                            service={service}
-                        ></Service>)
-                    }
-                </Row>
-            </Container>
+                    <Row className="d-flex justify-content-center mt-4">
+                        {
+                            services.map(service => <Service
+                                key={service.id}
+                                service={service}
+                            ></Service>)
+                        }
+                    </Row>
+                </Container>
+            </div>
         </>
     );
 };

@@ -1,9 +1,13 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Service = ({ service }) => {
-    const { name, img, description, price } = service;
+    const { id, name, img, description, price } = service;
+    const navigate = useNavigate();
+    const navigateToServiceDetail = id => {
+        navigate(`/service/${id}`);
+    }
     return (
         <Col md={4} className="mb-4">
             <Card>
@@ -14,7 +18,7 @@ const Service = ({ service }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    {/* <Link className='show-details-btn' to={'/reviews/' + id}>Show More Details</Link> */}
+                    <button onClick={() => navigateToServiceDetail(id)} className='btn btn-primary'>Book Now</button>
                 </Card.Body>
             </Card>
         </Col>
