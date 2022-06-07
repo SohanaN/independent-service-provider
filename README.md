@@ -6,22 +6,14 @@
 --------------
 ### Features and functionality used :-
 
-* Header
+* Home Page have Header, Banner, Service Section, About and Footer.
 
-* Banner
+* Implement an email/password (login/register)-based login system and GitHub authentication system.
 
-* Service Section
+* Protected Route. Registered users can access checkout page.
 
-* Footer
+* To store data used json.
 
-* Register
+* Other pages are Register, Login, Blog, About Us.
 
-* Login
-
-* React Js
-
-* React Bootstrap
-
-* React Router
-
-* Fake Data 
+Technology Used: HTML, CSS, React Js, json data, React Bootstrap, React Router, Firebase.
